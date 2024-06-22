@@ -24,6 +24,8 @@ Backend:
 Framework: 
 - Django 
 ## How to Run 
+
+- Use Xampp
  
 To run the Python backend server locally, follow these steps:
 
@@ -41,6 +43,11 @@ cd Pet-Rescue
 ```
 
 Install dependencies (assuming you have Python and pip installed)
+- python
+- mysqlclient
+- pip
+- git
+- django
 
 Apply migrations:
 
