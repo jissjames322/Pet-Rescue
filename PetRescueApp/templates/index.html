@@ -1,0 +1,118 @@
+
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+    <!-- header-section-starts -->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+                <p class="location"><i class="location"></i>  {% include 'loc.html' %}</p>
+				<p class="phonenum">{% include 'num.html' %}</p>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="logo">
+					{% include 'logo.html' %}
+				</div>
+				<span class="menu"></span>
+				<div class="top-menu">
+					<ul>
+					<nav class="cl-effect-5">
+						<li><a class="active" href="/" data-hover="HOME">Home</a></li>
+						<li><a href="/login" >Login</a></li>
+
+						<li><a href="/Customer_register" >User Registration </a></li>
+						<li><a href="/Adoption_center_register" >Adoption Center Registration </a></li>
+					</nav>
+					</ul>
+				</div>
+				<!-- script for menu -->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".top-menu" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+			<!-- script for menu -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- header-section-ends -->
+	<div class="banner">
+		<!----->
+	<div class="slider">
+		  <div class="callbacks_container">
+			  <ul class="rslides" id="slider">
+				 <li>
+					 <img src="{% static 'assets/images/3.jpg' %}" alt=""/>
+					  <div class="caption">
+						<h2>Until one has loved an animal a part of one's soul remains unawakened.</h2>
+						<a class="more" href="#">READ MORE</a>
+					  </div>
+				 </li>
+				 <li>
+					 <img src="{% static 'assets/images/2.jpg' %}" alt=""/>
+					  <div class="caption">
+						<h2>A dog is the only thing on earth that loves you more than you love yourself.</h2>
+						<a class="more" href="#">READ MORE</a>
+					  </div>
+				 </li>
+				 <li>
+					 <img src="{% static 'assets/images/1.jpg' %}" alt=""/>
+					  <div class="caption">
+						<h2>Money can buy you a fine dog, but only love can make him wag his tail.</h2>
+						<a class="more" href="#">READ MORE</a>
+					  </div>
+				 </li>
+			  </ul>
+		  </div>
+	</div>
+	<!----->
+	</div>
+	<!-- content-section-starts -->
+		<div class="content">
+			<div class="welcome-section">
+				<div class="container">
+					<div class="col-md-6 welcome-grid text-center">
+						<h3>Welcome</h3>
+						<h5>Duis autem vel eum iriure dolor in hendrerit in vulputa</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. littera gothica.</p>
+					</div>
+					<div class="col-md-6 images">
+						<div class="img1">
+							<img src="{% static 'assets/images/a1.jpg' %}" class="img-responsive" alt="" />
+						</div>
+						<div class="img2">
+						<img src="{% static 'assets/images/a2.jpg' %}" class="img-responsive" alt="" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="about-section text-center">
+				<div class="container">
+					<h2>About</h2>
+					<div class="col-md-6 about-section-grid text-left">
+						<h4>Mirum est notare quam littera </h4>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio</p>
+					</div>
+					<div class="col-md-6 about-section-grid text-left">
+						<h4>Mirum est notare quam littera </h4>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio</p>
+					</div>
+					<div class="clearfix"></div>
+
+				</div>
+			</div>
+
+		</div>
+	<!-- content-section-ends -->
+
+
+		{% endblock %}
